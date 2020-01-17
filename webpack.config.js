@@ -1,8 +1,8 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var DIST_DIR = path(__dirname,'/dist');
-var SRC_DIR = path(__dirname,'/src');
+var DIST_DIR = path.resolve(__dirname,'/dist');
+var SRC_DIR = path.resolve(__dirname,'./src');
 
 var config = {
 
