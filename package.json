@@ -1,7 +1,7 @@
 {
   "name": "mov-api",
   "version": "1.0.0",
-  "description": "Display Movies from an API Request",
+  "description": "Display Movies from an API Request to OMDB Movie Database",
   "main": "index.js",
   "babel": {
     "presets": [
