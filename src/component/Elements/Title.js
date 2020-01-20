@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const Title = styled.div`
    @font-face {
     font-family: 'Gotham';
-    src: url('../Fonts/Gotham-Bold.otf') format('otf'),
-         url('../Fonts/Gotham-Light.otf') format('otf'),
-         url('../Fonts/GothamMedium_0.ttf') format('ttf');
+    src: url('../../Fonts/Gotham-Bold.otf') format('otf'),
+         url('../../Fonts/Gotham-Light.otf') format('otf'),
+         url('../../Fonts/GothamMedium_0.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
    }
