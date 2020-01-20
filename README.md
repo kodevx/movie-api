@@ -1,2 +1,2 @@
 Movie API : 
-Search for Movies from OMDB Database using an API request using React JS
+Search for Movies from OMDB Database using an API request developed on React JS
