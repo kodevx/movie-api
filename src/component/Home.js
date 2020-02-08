@@ -53,9 +53,9 @@ class Home extends Component {
     this.setState({ name });
   }
 
-  displayMovies(){
+  displayMovies(movie){
     console.log('invoked display movie function');
-    this.state.movie.length?this.state.movie.map(movie=>{ return( <Movie id={movie.imdbID} name={movie.Title} year={movie.Year} type={movie.Type} />); }): 'No Movies Searched'
+    return( movie.length? movie.map(mov=>{ return( <Movie key={mov.imdbID} name={mov.Title} year={mov.Year} type={mov.Type} image={mov.Poster} />); }) :<Title>"No Movies Searched"</Title> );
   }
 
   render() { 
@@ -71,7 +71,7 @@ class Home extends Component {
              <SrchBtn onClick={ ()=>{ this.handleSearch(this.state.name); }}>S E A R C H</SrchBtn>
            </SrchWrapper>
            <ListWrapper>
-              {this.state.movie.length ?this.state.movie.map(movie=>{ return( <Movie key={movie.imdbID} name={movie.Title} year={movie.Year} type={movie.Type} image={movie.Poster} />); }) :<Title>"No Movies Searched"</Title>}
+              { this.state.movie.length ? this.displayMovies(this.state.movie):<Title>"No Movies Searched"</Title>} 
            </ListWrapper>
          </Wrapper>
     );
